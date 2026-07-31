@@ -1,0 +1,95 @@
+@use '../../styles/variables' as *;
+
+.contact {
+  color: $white;
+  background: $text;
+
+  &__content {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    align-items: start;
+    gap: clamp(3rem, 8vw, 7rem);
+  }
+
+  h2 {
+    margin-bottom: 1.5rem;
+  }
+
+  &__information > p:not(.section-label) {
+    color: #cbd5e1;
+  }
+
+  &__links {
+    display: flex;
+    margin-top: 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+  }
+
+  &__links a {
+    color: #93c5fd;
+    font-weight: 700;
+  }
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  label {
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #64748b;
+    border-radius: 7px;
+    color: $text;
+    background: $white;
+    font: inherit;
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  input:focus-visible,
+  textarea:focus-visible {
+    outline: 3px solid #60a5fa;
+    outline-offset: 2px;
+  }
+
+  button {
+    align-self: flex-start;
+    padding: 0.75rem 1.5rem;
+    border: 0;
+    border-radius: 7px;
+    color: $white;
+    background: $primary;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  button:focus-visible {
+    outline: 3px solid $white;
+    outline-offset: 3px;
+  }
+}
+
+@media (max-width: 750px) {
+  .contact__content {
+    grid-template-columns: 1fr;
+  }
+}

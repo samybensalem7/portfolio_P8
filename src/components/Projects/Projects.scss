@@ -1,0 +1,11 @@
+@use '../../styles/variables' as *;
+
+.projects {
+  background: $white;
+
+  &__grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+}

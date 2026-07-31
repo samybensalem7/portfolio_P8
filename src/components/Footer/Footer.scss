@@ -1,0 +1,27 @@
+@use '../../styles/variables' as *;
+
+.footer {
+  padding: 1.4rem 1.5rem;
+  border-top: 1px solid #334155;
+  color: #cbd5e1;
+  background: $text;
+  font-size: 0.85rem;
+
+  &__content,
+  &__content div {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.2rem;
+  }
+
+  a:hover {
+    color: $white;
+  }
+}
+
+@media (max-width: 520px) {
+  .footer__content {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,47 @@
+@use '../../styles/variables' as *;
+
+.skills {
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+  }
+}
+
+.skill-card {
+  display: flex;
+  min-height: 145px;
+  padding: 1.3rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  border: 1px solid $border;
+  border-radius: $radius;
+  background: $white;
+  font-weight: 700;
+  transition: transform 0.2s, box-shadow 0.2s;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba($text, 0.08);
+  }
+
+  img {
+    width: 58px;
+    height: 58px;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 800px) {
+  .skills__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .skills__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

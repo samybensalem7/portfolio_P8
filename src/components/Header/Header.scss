@@ -1,0 +1,54 @@
+@use '../../styles/variables' as *;
+
+.header {
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid $border;
+  background: rgba($background, 0.96);
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+
+  &__name {
+    flex-shrink: 0;
+    font-size: 1.1rem;
+    font-weight: 800;
+  }
+
+  &__menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 0.4rem 1.4rem;
+    color: $secondary;
+    font-size: 0.92rem;
+    font-weight: 600;
+  }
+
+  a:hover {
+    color: $primary;
+  }
+}
+
+@media (max-width: 760px) {
+  .header {
+    padding: 0.8rem 1.25rem;
+
+    &__content {
+      flex-direction: column;
+      gap: 0.45rem;
+    }
+
+    &__menu {
+      justify-content: center;
+      gap: 0.25rem 0.9rem;
+      font-size: 0.78rem;
+    }
+  }
+}
