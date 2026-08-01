@@ -1,10 +1,6 @@
 import './Contact.scss'
 
 function Contact() {
-  function handleSubmit(event) {
-    event.preventDefault()
-  }
-
   return (
     <section className="contact" id="contact">
       <div className="container contact__content">
@@ -13,13 +9,13 @@ function Contact() {
           <h2>Me contacter</h2>
           <p>Je suis disponible pour échanger autour du développement web et de nouvelles opportunités.</p>
           <div className="contact__links">
-            <a href="mailto:adresse@email.com">samy.bensalemm@gmail.com</a>
+            <a href="mailto:samy.bensalemm@gmail.com">samy.bensalemm@gmail.com</a>
             <a href="#">LinkedIn</a>
             <a href="#">GitHub</a>
           </div>
         </div>
 
-        <form className="contact-form" onSubmit={handleSubmit}>
+        <form className="contact-form" action="https://formspree.io/f/mdaqrpnv" method="POST">
           <div className="contact-form__field">
             <label htmlFor="name">Nom</label>
             <input type="text" id="name" name="name" required />

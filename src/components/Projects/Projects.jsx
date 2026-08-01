@@ -7,7 +7,7 @@ function Projects() {
     <section className="projects" id="projects">
       <div className="container">
         <p className="section-label">Mes réalisations</p>
-        <h2>Mes projets</h2>
+        <h2>Mes projets en développement web</h2>
         <div className="projects__grid">
           {projects.map((project) => <ProjectCard key={project.id} {...project} />)}
         </div>
