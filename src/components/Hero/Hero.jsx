@@ -14,6 +14,13 @@ function Hero() {
           <div className="hero__links">
             <a href="https://github.com/samybensalem7">GitHub</a>
             <a href="https://www.linkedin.com/in/samy-bensalem-3901481b6/">LinkedIn</a>
+            <a
+              href={`${import.meta.env.BASE_URL}Bensalem_Samy_cv_oc.pdf`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Voir mon CV
+            </a>
             <a className="button" href="#projects">Voir mes projets</a>
           </div>
         </div>
