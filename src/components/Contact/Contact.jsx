@@ -10,8 +10,8 @@ function Contact() {
           <p>Je suis disponible pour échanger autour du développement web et de nouvelles opportunités.</p>
           <div className="contact__links">
             <a href="mailto:samy.bensalemm@gmail.com">samy.bensalemm@gmail.com</a>
-            <a href="#">LinkedIn</a>
-            <a href="#">GitHub</a>
+            <a href="https://www.linkedin.com/in/samy-bensalem-3901481b6/">LinkedIn</a>
+            <a href="https://github.com/samybensalem7">GitHub</a>
           </div>
         </div>
 
