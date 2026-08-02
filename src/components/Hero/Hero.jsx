@@ -1,4 +1,4 @@
-import samyphoto from '../../assets/images/samyphoto.png'
+import samyphoto from '../../assets/images/samyphoto.webp'
 import './Hero.scss'
 
 function Hero() {
@@ -12,8 +12,8 @@ function Hero() {
           <h2>Développement front-end et back-end</h2>
           <p>Développeur web passionné, je conçois des interfaces modernes, intuitives et responsives, en accordant une attention particulière à l’accessibilité, à la qualité du code et à l’expérience utilisateur. Curieux et motivé, j’aime transformer des idées en projets web fonctionnels et agréables à utiliser.</p>
           <div className="hero__links">
-            <a href="https://github.com/samybensalem7">GitHub</a>
-            <a href="https://www.linkedin.com/in/samy-bensalem-3901481b6/">LinkedIn</a>
+            <a href="https://github.com/samybensalem7" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/samy-bensalem-3901481b6/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             <a
               href={`${import.meta.env.BASE_URL}Bensalem_Samy_cv_oc.pdf`}
               target="_blank"

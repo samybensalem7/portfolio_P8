@@ -1,6 +1,6 @@
-import kasa from '../assets/images/kasa.png'
-import mvg from '../assets/images/mvg.png'
-import nina_carducci from '../assets/images/nina_carducci.png'
+import kasa from '../assets/images/kasa.webp'
+import mvg from '../assets/images/mvg.webp'
+import nina_carducci from '../assets/images/nina_carducci.webp'
 
 
 const projects = [

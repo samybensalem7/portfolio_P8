@@ -14,7 +14,7 @@ function ProjectCard({
 }) {
   return (
     <article className="project-card">
-      <img className="project-card__image" src={image} alt={`Aperçu provisoire du projet ${title}`} />
+      <img className="project-card__image" src={image} alt={`Aperçu du projet ${title}`} />
       <div className="project-card__content">
         <h3>{title}</h3>
         <p>{description}</p>
@@ -47,7 +47,7 @@ function ProjectCard({
           </ul>
         </div>
         <div className="project-card__links">
-          <a href={github}>Retrouvez le projet surGitHub</a>
+          <a href={github} target="_blank" rel="noopener noreferrer">Retrouvez le projet sur GitHub</a>
         </div>
       </div>
     </article>
